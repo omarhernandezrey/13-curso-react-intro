@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 48px;
-    width: 48px;
+    height: 106px;
+    width: 38px;
     font-size: 24px;
     font-weight: 700;
   }
@@ -24,7 +24,8 @@
   /* Icono de eliminación (delete) */
   .Icon-container-delete {
     position: absolute;
-    top: -24px;
+    top: -21px;
+
     right: 0;
   }
   
@@ -35,8 +36,8 @@
   
   /* Estilo para todos los íconos SVG en los contenedores de verificación y eliminación al pasar el mouse */
   .Icon-svg {
-    width: 24px;
-    height: 24px;
+    width: 45px;
+    height: 45px;
   }
   
   /* Estilo para el icono de verificación al pasar el mouse */
