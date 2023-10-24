@@ -1,0 +1,51 @@
+/* Contenedor principal de iconos */
+.Icon-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  /* Icono de verificación (check) */
+  .Icon-container-check {
+    position: absolute;
+    left: 12px;
+  }
+  
+  /* Estilo para icono de verificación activo */
+  .Icon-container-check--active {
+    color: #4caf50;
+  }
+  
+  /* Icono de eliminación (delete) */
+  .Icon-container-delete {
+    position: absolute;
+    top: -24px;
+    right: 0;
+  }
+  
+  /* Estilo de icono de eliminación al pasar el mouse */
+  .Icon-container-delete:hover {
+    color: red;
+  }
+  
+  /* Estilo para todos los íconos SVG en los contenedores de verificación y eliminación al pasar el mouse */
+  .Icon-svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Estilo para el icono de verificación al pasar el mouse */
+  .Icon-container-check:hover .Icon-svg {
+    fill: green;
+  }
+  
+  /* Estilo para el icono de eliminación al pasar el mouse */
+  .Icon-container-delete:hover .Icon-svg {
+    fill: red;
+  }
+  
