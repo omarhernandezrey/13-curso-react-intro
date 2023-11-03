@@ -1,11 +1,11 @@
-import { TodoCounter } from '../TodoCounter';
-import { TodoSearch } from '../TodoSearch';
-import { TodoList } from '../TodoList';
-import { TodoItem } from '../TodoItem';
-import { TodosLoading } from '../TodosLoading';
-import { TodosError } from '../TodosError';
-import { EmptyTodos } from '../EmptyTodos';
 import { CreateTodoButton } from '../CreateTodoButton';
+import { EmptyTodos } from '../EmptyTodos';
+import { TodoCounter } from '../TodoCounter';
+import { TodoItem } from '../TodoItem';
+import { TodoList } from '../TodoList';
+import { TodoSearch } from '../TodoSearch';
+import { TodosError } from '../TodosError';
+import { TodosLoading } from '../TodosLoading';
 
 function AppUI({
   loading,
@@ -20,15 +20,8 @@ function AppUI({
 }) {
   return (
     <>
-      <TodoCounter
-        completed={completedTodos}
-        total={totalTodos} 
-      />
-      <TodoSearch
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}
-      />
-
+      <TodoCounter completed={completedTodos} total={totalTodos} />
+      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
       <TodoList>
         {loading && (
           <>
@@ -37,10 +30,9 @@ function AppUI({
             <TodosLoading />
           </>
         )}
-        {error && <TodosError/>}
-        {(!loading && searchedTodos.length === 0) && <EmptyTodos />}
-
-        {searchedTodos.map(todo => (
+        {error && <TodosError />}
+        {!loading && searchedTodos.length === 0 && <EmptyTodos />}
+        {searchedTodos.map((todo) => (
           <TodoItem
             key={todo.text}
             text={todo.text}
@@ -50,7 +42,6 @@ function AppUI({
           />
         ))}
       </TodoList>
-      
       <CreateTodoButton />
     </>
   );
