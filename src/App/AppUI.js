@@ -23,8 +23,7 @@ function AppUI() {
       <TodoCounter />
       <TodoSearch />
 
-      <TodoContext.Consumer>
-        {() => (
+
           <TodoList>
             {loading && (
               <>
@@ -46,9 +45,7 @@ function AppUI() {
               />
             ))}
           </TodoList>
-        )}
-      </TodoContext.Consumer>
-      
+
       <CreateTodoButton />
     </>
   );
