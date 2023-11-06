@@ -6,7 +6,8 @@ function TodoSearch() {
   const {
     searchValue,
     setSearchValue,
-  }= React.useContext(TodoContext);
+  } = React.useContext(TodoContext);
+  
   return (
     <input
       placeholder="Cortar cebolla"
