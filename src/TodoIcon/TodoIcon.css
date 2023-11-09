@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 114px;
+  height: 48px;
   width: 48px;
   font-size: 24px;
   font-weight: bold;
@@ -29,8 +29,8 @@
 }
 
 .Icon-svg {
-  width: 64px;
-  height: 64px;
+  width: 24px;
+  height: 24px;
 }
 
 .Icon-container-check:hover .Icon-svg {
