@@ -18,6 +18,7 @@ function AppUI() {
     searchedTodos,
     completeTodo,
     deleteTodo,
+    editTodo, 
     openModal,
     setOpenModal,
   } = React.useContext(TodoContext);
@@ -45,6 +46,7 @@ function AppUI() {
             completed={todo.completed}
             onComplete={() => completeTodo(todo.text)}
             onDelete={() => deleteTodo(todo.text)}
+            onEdit={(newText) => editTodo(todo.text, newText)}
           />
         ))}
       </TodoList>

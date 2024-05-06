@@ -1,41 +1,42 @@
-
+/* src/TodoIcon/TodoIcon.css */
 .Icon-container {
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 48px;
   width: 48px;
   font-size: 24px;
   font-weight: bold;
-  /* background-color: #CCC; */
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  transition: all 0.3s ease;
 }
 
-.Icon-container-check {
-  position: absolute;
-  left: 12px;
-}
-.Icon-container-check--active {
-  color: #4caf50;
+.Icon-container-check,
+.Icon-container-delete,
+.Icon-container-edit {
+  position: relative;
 }
 
-.Icon-container-delete {
-  position: absolute;
-  top: 10px;
-  right: 0;
-}
-.Icon-container-delete:hover {
-  color: red;
-}
-
-.Icon-svg {
-  width: 64px;
-  height:64px;
+.Icon-container-check .Icon-svg,
+.Icon-container-delete .Icon-svg,
+.Icon-container-edit .Icon-svg {
+  width: 100%;
+  height: auto;
+  fill: currentColor;
+  transition: fill 0.3s ease;
 }
 
 .Icon-container-check:hover .Icon-svg {
-  fill: green;
+  fill: #4caf50;
 }
+
 .Icon-container-delete:hover .Icon-svg {
-  fill: red;
+  fill: #ff0000;
+}
+
+.Icon-container-edit:hover .Icon-svg {
+  fill: #ffd700; /* Cambia el color a amarillo cuando se pasa el ratón */
 }

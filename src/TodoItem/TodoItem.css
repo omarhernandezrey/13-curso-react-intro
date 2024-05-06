@@ -1,20 +1,44 @@
 .TodoItem {
-  background-color: #FAFAFA;
+  background-color: #140f0f; /* Color de fondo gris oscuro */
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 24px;
-  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+  margin-top: 34px;
+  padding: 16px;
+  border-radius: 20px; /* Redondeado de los bordes */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Sombra con relieve */
 }
 
 .TodoItem-p {
-  margin: 24px 0 24px 24px;
-  width: calc(100% - 120px);
+  flex: 1;
+  margin: 0;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.6;
   font-weight: 400;
+  color: white;
 }
+
 .TodoItem-p--complete {
-  text-decoration: line-through;
+  text-decoration: line-through; /* Texto tachado para completado */
+  color: white; /* Cambio de color para texto completado */
+}
+
+.TodoItem-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.TodoItem-button {
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* Cambio de color de fondo al pasar el ratón sobre los botones */
+.TodoItem-button:hover {
+  background-color: #e0e0e0;
 }

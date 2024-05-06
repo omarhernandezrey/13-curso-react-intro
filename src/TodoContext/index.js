@@ -44,6 +44,20 @@ function TodoProvider({ children }) {
     saveTodos(newTodos);
   };
 
+  const editTodo = (oldText, newText) => {
+    console.log("Editando todo...");
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex((todo) => todo.text === oldText);
+    if (todoIndex !== -1) {
+      newTodos[todoIndex].text = newText;
+      console.log("Todo editado:", newTodos[todoIndex]);
+      saveTodos(newTodos);
+    } else {
+      console.log("No se encontró el todo a editar.");
+    }
+  };
+  
+
   const deleteTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex(
@@ -64,6 +78,7 @@ function TodoProvider({ children }) {
       searchedTodos,
       addTodo,
       completeTodo,
+      editTodo,
       deleteTodo,
       openModal,
       setOpenModal,

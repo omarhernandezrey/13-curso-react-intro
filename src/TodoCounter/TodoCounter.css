@@ -1,11 +1,39 @@
 .TodoCounter {
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
   margin: 0;
-  padding: 48px;
-  font-weight: normal;
+  padding: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2ecc71, #3498db); /* Degradado de colores */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: all 0.4s ease; /* Transición suave */
+  position: relative; /* Posición relativa para efectos */
+  overflow: hidden; /* Ocultar elementos que sobresalen */
+}
+
+.TodoCounter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Overlay blanco */
+  transition: all 0.4s ease; /* Transición suave */
+}
+
+.TodoCounter:hover::before {
+  left: 0;
+}
+
+.TodoCounter:hover {
+  transform: translateY(-5px) scale(1.02); /* Efecto de levantamiento y escala al pasar el ratón */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }
 
 .TodoCounter span {
-  font-weight: bold;
+  font-weight: normal; /* Estilo de fuente normal para el número */
+  color: #ffffff; /* Color de texto blanco */
 }

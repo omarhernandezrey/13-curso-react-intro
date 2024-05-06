@@ -1,26 +1,26 @@
 .CreateTodoButton {
-  background-color: #61DAFA;
-  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 50px;
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  font-weight: bold;
-  color: #FAFAFA;
-  display: flex;
+  background-color: #1e9620;  /* Verde vibrante que llama la atención */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);  /* Sombra más sutil para una apariencia refinada */
+  border: none;  /* Mantenemos sin bordes para un diseño limpio */
+  border-radius: 50%;  /* Forma redonda perfecta */
+  cursor: pointer;  /* Cursor de mano que indica interactividad */
+  font-size: 50px;  /* Tamaño de ícono grande para fácil reconocimiento */
+  position: fixed;  /* Posición fija en la interfaz */
+  bottom: 30px;  /* Posicionamiento ligeramente más alejado del borde */
+  right: 30px;
+  font-weight: bold;  /* Negrita para dar énfasis */
+  color: white;  /* Texto blanco para mejor contraste */
+  display: flex;  /* Flexbox para centrar contenido */
   justify-content: center;
   align-items: center;
-  height: 64px;
-  width: 64px;
-  z-index: 1;
-
-  transform: rotate(0);
-  transition: .3s ease;
+  height: 70px;  /* Tamaño aumentado para mejor accesibilidad */
+  width: 70px;
+  z-index: 10;  /* Mayor z-index para asegurar visibilidad sobre otros elementos */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transiciones suavizadas para transformación y sombra */
 }
 
-.CreateTodoButton:hover {
-  transform: rotate(224deg);
+.CreateTodoButton:hover, .CreateTodoButton:focus {
+  transform: rotate(360deg);  /* Rotación completa para un efecto más dinámico */
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);  /* Sombra más pronunciada al interactuar */
+  background-color: #22ac25;  /* Cambio sutil de color al interactuar */
 }

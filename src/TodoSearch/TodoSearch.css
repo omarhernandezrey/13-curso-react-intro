@@ -1,24 +1,24 @@
 .TodoSearch {
-  background: #F9FBFC;
-  border-radius: 2px;
-  border: 2px solid #202329;
-  margin: 0 24px;
-  height: 64px;
-  width: calc(100% - 62px);
-  font-size: 24px;
-  text-align: center;
-  font-family: 'Montserrat';
+  background: #ffffff; /* Fondo blanco */
+  border-radius: 24px; /* Bordes redondeados */
+  border: none; /* Sin borde */
+  margin: 8px 24px; /* Márgenes ajustados */
+  height: 40px; /* Altura reducida */
+  width: calc(100% - 48px); /* Ancho ajustado */
+  font-size: 16px; /* Tamaño de fuente reducido */
+  padding: 8px 16px; /* Espaciado interno ajustado */
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: #1E1E1F;
-  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+  color: #333333; /* Color de texto oscuro */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
 }
 
 .TodoSearch::placeholder {
-  color: #A5A5A5;
-  font-family: 'Montserrat';
-  font-weight: 400;
+  color: #A5A5A5; /* Color de placeholder gris */
 }
 
 .TodoSearch:focus {
-  outline-color: #61DAFA;
+  outline: none; /* Eliminar el contorno al enfocar */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al enfocar */
 }
