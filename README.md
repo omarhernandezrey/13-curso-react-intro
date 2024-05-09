@@ -1,75 +1,125 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# Gestión de Tareas - React App
 
-¡Hola, Platzinauta!
+Esta aplicación de gestión de tareas permite a los usuarios crear, editar, marcar como completadas y eliminar tareas. También cuenta con un buscador que facilita filtrar las tareas existentes. Toda la información se almacena en el Local Storage del navegador para persistencia de datos.
 
-En este repositorio encontrarás el código de todas las clases del [Curso de Introducción a React.js](https://platzi.com/reactjs). Para empezar solo debes clonar este repositorio (`git clone`), instalar sus dependencias (`npm i`) y ejecutar la aplicación (`npm start`).
+## Características
 
-La rama principal contiene el código con el que eempezamos el curso. En las demás ramas encontrarás el código de las siguientes clases y finalmente el deploy de la aplicación.
+- **Crear Tareas:** Permite a los usuarios ingresar nuevas tareas.
+- **Editar Tareas:** Los usuarios pueden modificar el contenido de las tareas existentes.
+- **Eliminar Tareas:** Permite a los usuarios eliminar tareas que ya no sean necesarias.
+- **Marcar como Completada:** Los usuarios pueden marcar tareas como completadas.
+- **Contador de Tareas:** Muestra el número total de tareas y cuántas de ellas están completadas.
+- **Buscador de Tareas:** Permite a los usuarios filtrar tareas por texto.
+- **Persistencia de Datos:** Toda la información se guarda en el Local Storage del navegador.
 
-¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
+## Estructura del Proyecto
 
-## Getting Started with Create React App
+El proyecto está estructurado como sigue:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Aquí tienes un archivo README.md completo para tu aplicación de gestión de tareas desarrollada en React. Este documento incluye una descripción del proyecto, cómo iniciar la aplicación, sus características y la estructura del proyecto.
 
-In the project directory, you can run:
+markdown
+Copy code
+# Gestión de Tareas - React App
 
-### `npm start`
+Esta aplicación de gestión de tareas permite a los usuarios crear, editar, marcar como completadas y eliminar tareas. También cuenta con un buscador que facilita filtrar las tareas existentes. Toda la información se almacena en el Local Storage del navegador para persistencia de datos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Características
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Crear Tareas:** Permite a los usuarios ingresar nuevas tareas.
+- **Editar Tareas:** Los usuarios pueden modificar el contenido de las tareas existentes.
+- **Eliminar Tareas:** Permite a los usuarios eliminar tareas que ya no sean necesarias.
+- **Marcar como Completada:** Los usuarios pueden marcar tareas como completadas.
+- **Contador de Tareas:** Muestra el número total de tareas y cuántas de ellas están completadas.
+- **Buscador de Tareas:** Permite a los usuarios filtrar tareas por texto.
+- **Persistencia de Datos:** Toda la información se guarda en el Local Storage del navegador.
 
-### `npm run build`
+## Estructura del Proyecto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+El proyecto está estructurado como sigue:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+├── .gitignore
+├── README.md
+├── asset-manifest.json
+├── build/
+│ ├── asset-manifest.json
+│ ├── favicon.ico
+│ ├── index.html
+│ ├── manifest.json
+│ ├── react192.png
+│ ├── react512.png
+│ ├── robots.txt
+│ └── static/
+│ ├── css/
+│ │ └── main.4b3eb002.css
+│ │ └── main.4b3eb002.css.map
+│ ├── js/
+│ │ └── main.cdadf5c1.js
+│ │ └── main.cdadf5c1.js.LICENSE.txt
+│ │ └── main.cdadf5c1.js.map
+│ └── media/
+│ └── check.4b06daf649edd566cf50ca88ef8c5a39.svg
+│ └── delete.2ed7f0725864f2f85b6630b40a4cf0da.svg
+├── favicon.ico
+├── index.html
+├── manifest.json
+├── package-lock.json
+├── package.json
+├── public/
+│ ├── favicon.ico
+│ ├── index.html
+│ ├── manifest.json
+│ ├── react192.png
+│ ├── react512.png
+│ └── robots.txt
+└── src/
+├── App/
+├── CreateTodoButton/
+├── EmptyTodos/
+├── Modal/
+├── TodoContext/
+├── TodoCounter/
+├── TodoForm/
+├── TodoIcon/
+├── TodoItem/
+├── TodoList/
+├── TodoSearch/
+├── TodosError/
+├── TodosLoading/
+└── index.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tecnologías Utilizadas
+- React
+- HTML
+- CSS
+- 
+## Instalación
+1. Clona este repositorio en tu máquina local usando Git:
+   ```bash
+   git clone https://github.com/tu_usuario/aplicacion-tareas.git
+Navega al directorio del proyecto:
+bash
+Copy code
+cd aplicacion-tareas
+Instala las dependencias necesarias:
+bash
+Copy code
+npm install
+Uso
+Inicia la aplicación en tu entorno de desarrollo local:
+bash
+Copy code
+npm start
+Abre tu navegador web y ve a la siguiente dirección:
+arduino
+Copy code
+http://localhost:3000
+Interactúa con la aplicación para gestionar tus tareas diarias.
+Contribución
+Las contribuciones son bienvenidas. Si tienes ideas para mejorar la aplicación, por favor crea un fork del repositorio, implementa tus cambios y envía un pull request.
 
-### `npm run eject`
+Licencia
+Este proyecto está bajo la licencia MIT.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desarrollado por Omar Alberto Hernández Rey
